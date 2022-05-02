@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Box, Button, Container, TextField, Typography } from "@mui/material";
 
 // App.js
 function Home() {
@@ -24,13 +24,12 @@ function App() {
   return (
     <Container
       sx={{
-        display: "flex",
-        flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
       }}
     >
       <Typography variant="h2">React-Material-ui-template</Typography>
+      <TextField placeholder={"תמיכה בעברית"} />
       <Box>
         this template include some basic required initialization for popular
         libraries

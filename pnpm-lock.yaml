@@ -2,30 +2,38 @@ lockfileVersion: 5.3
 
 specifiers:
   '@babel/core': ^7.17.10
+  '@emotion/cache': ^11.7.1
   '@emotion/react': ^11.9.0
   '@emotion/styled': ^11.8.1
   '@mui/material': ^5.6.4
   '@types/react': ^18.0.0
   '@types/react-dom': ^18.0.0
+  '@types/stylis': ^4.0.2
   '@vitejs/plugin-react': ^1.3.0
   react: ^18.0.0
   react-dom: ^18.0.0
   react-router-dom: '6'
+  stylis: ^4.1.1
+  stylis-plugin-rtl: ^2.1.1
   typescript: ^4.6.3
   vite: ^2.9.5
 
 dependencies:
   '@babel/core': 7.17.10
+  '@emotion/cache': 11.7.1
   '@emotion/react': 11.9.0_e307289084c0d0f4b25b50629c6033a9
   '@emotion/styled': 11.8.1_9b485b11da07bf809bd62e51e412085b
   '@mui/material': 5.6.4_49280857c0b01a563210e4681e2bddf5
   react: 18.1.0
   react-dom: 18.1.0_react@18.1.0
   react-router-dom: 6.3.0_react-dom@18.1.0+react@18.1.0
+  stylis: 4.1.1
+  stylis-plugin-rtl: 2.1.1_stylis@4.1.1
 
 devDependencies:
   '@types/react': 18.0.8
   '@types/react-dom': 18.0.3
+  '@types/stylis': 4.0.2
   '@vitejs/plugin-react': 1.3.1
   typescript: 4.6.4
   vite: 2.9.7
@@ -619,6 +627,10 @@ packages:
   /@types/scheduler/0.16.2:
     resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
 
+  /@types/stylis/4.0.2:
+    resolution: {integrity: sha512-wtckGuk1eXUlUz0Qb1eXHG37Z7HWT2GfMdqRf8F/ifddTwadSS9Jwsqi4qtXk7cP7MtoyGVIHPElFCLc6HItbg==}
+    dev: true
+
   /@vitejs/plugin-react/1.3.1:
     resolution: {integrity: sha512-qQS8Y2fZCjo5YmDUplEXl3yn+aueiwxB7BaoQ4nWYJYR+Ai8NXPVLlkLobVMs5+DeyFyg9Lrz6zCzdX1opcvyw==}
     engines: {node: '>=12.0.0'}
@@ -703,6 +715,11 @@ packages:
       parse-json: 5.2.0
       path-type: 4.0.0
       yaml: 1.10.2
+    dev: false
+
+  /cssjanus/2.1.0:
+    resolution: {integrity: sha512-kAijbny3GmdOi9k+QT6DGIXqFvL96aksNlGr4Rhk9qXDZYWUojU4bRc3IHWxdaLNOqgEZHuXoe5Wl2l7dxLW5g==}
+    engines: {node: '>=10.0.0'}
     dev: false
 
   /csstype/3.0.11:
@@ -1230,8 +1247,21 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /stylis-plugin-rtl/2.1.1_stylis@4.1.1:
+    resolution: {integrity: sha512-q6xIkri6fBufIO/sV55md2CbgS5c6gg9EhSVATtHHCdOnbN/jcI0u3lYhNVeuI65c4lQPo67g8xmq5jrREvzlg==}
+    peerDependencies:
+      stylis: 4.x
+    dependencies:
+      cssjanus: 2.1.0
+      stylis: 4.1.1
+    dev: false
+
   /stylis/4.0.13:
     resolution: {integrity: sha512-xGPXiFVl4YED9Jh7Euv2V220mriG9u4B2TA6Ybjc1catrstKD2PpIdU3U0RKpkVBC2EhmL/F0sPCr9vrFTNRag==}
+    dev: false
+
+  /stylis/4.1.1:
+    resolution: {integrity: sha512-lVrM/bNdhVX2OgBFNa2YJ9Lxj7kPzylieHd3TNjuGE0Re9JB7joL5VUKOVH1kdNNJTgGPpT8hmwIAPLaSyEVFQ==}
     dev: false
 
   /supports-color/5.5.0:
