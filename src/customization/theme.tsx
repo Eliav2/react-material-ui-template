@@ -8,7 +8,7 @@ const theme = createTheme({
   direction: config.direction,
   palette: {
     primary: {
-      main: blue[500],
+      main: blue[800],
     },
   },
   components: {

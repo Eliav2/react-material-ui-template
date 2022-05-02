@@ -1,5 +1,13 @@
 import { Route, Routes } from "react-router-dom";
-import { Box, Button, Container, TextField, Typography } from "@mui/material";
+import {
+  AppBar,
+  Box,
+  Button,
+  Container,
+  TextField,
+  Toolbar,
+  Typography,
+} from "@mui/material";
 
 // App.js
 function Home() {
@@ -22,27 +30,36 @@ function About() {
 
 function App() {
   return (
-    <Container
-      sx={{
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Typography variant="h2">React-Material-ui-template</Typography>
-      <TextField placeholder={"תמיכה בעברית"} />
-      <Box>
-        this template include some basic required initialization for popular
-        libraries
-      </Box>
-      <ul>
-        <li>Material-UI v5</li>
-        <li>React-Router v6</li>
-      </ul>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="about" element={<About />} />
-      </Routes>
-    </Container>
+    <>
+      <AppBar position="static">
+        <Toolbar>
+          <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+            המערכת שלי
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <Container
+        sx={{
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Typography variant="h2">React-Material-ui-template</Typography>
+        <TextField placeholder={"תמיכה בעברית"} />
+        <Box>
+          this template include some basic required initialization for popular
+          libraries
+        </Box>
+        <ul>
+          <li>Material-UI v5</li>
+          <li>React-Router v6</li>
+        </ul>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="about" element={<About />} />
+        </Routes>
+      </Container>
+    </>
   );
 }
 
